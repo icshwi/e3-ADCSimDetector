@@ -1,0 +1,4 @@
+[submodule "ADCSimDetector"]
+	path = ADCSimDetector
+	url = https://github.com/areaDetector/ADCSimDetector
+	ignore = all
