@@ -18,8 +18,8 @@
 # 
 # Author  : Jeong Han Lee
 # email   : jeonghan.lee@gmail.com
-# Date    : Thursday, March 28 22:30:27 CET 2019
-# version : 0.0.2
+# Date    : Monday, November  4 16:58:54 CET 2019
+# version : 0.0.3
 #
 ## The following lines are mandatory, please don't change them.
 where_am_I := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
@@ -45,6 +45,9 @@ USR_INCLUDES += -I$(where_am_I)$(APPSRC)
 
 
 TEMPLATES += $(APPDB)/ADCSimDetector.template
+TEMPLATES += $(APPDB)/ADCSimDetector_settings.req
+TEMPLATES += $(APPDB)/ADCSimDetectorN.template
+TEMPLATES += $(APPDB)/ADCSimDetectorN_settings.req
 
 HEADERS   += $(APPSRC)/ADCSimDetector.h
 SOURCES   += $(APPSRC)/ADCSimDetector.cpp
